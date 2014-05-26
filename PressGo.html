@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Press Go App</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Racing+Sans+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+ </head>
+<body>	
+	<div class="container">
+		<header>
+			<h1 id="app-title">PRESS GO</h1>
+		</header>
+		<div class="pickIt">
+			
+			<h2>Where are you going?</h2><form onsubmit="return validate()" name="form">
+				<label for="city">CITY</label><input id="city" type="text" name="city">
+				<label for="country">COUNTRY</label><input id="country" type="text" name="country">
+				<button id="getout" value="GO">GO<i class="fa fa-plane"></i></button>
+			</form>
+		</div>
+
+		<div class="events">
+			<p id="instructions">Enter the city and country of where you're travelling to. Click 'GO' for live music events in the area.</p>
+
+			<p id="crazycity">Here's that list I promised of live music events happening while you enjoy your stay in <span id="cty">(where you're</span>!</p>
+		</div>
+		<div class="playlist" id="allthEvents">
+			<ul></ul>		
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
+

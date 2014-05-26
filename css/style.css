@@ -1,0 +1,166 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/beach2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header h1 {
+  font-family: "Racing Sans One";
+  font-size: 150px;
+  text-align: center;
+  color: #da55b9;
+  opacity: 0.9;
+  margin: 1%;
+  letter-spacing: 0.25em;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h2, h3, h4, label, p, span, date {
+  font-family: "Open Sans";
+}
+
+h2 {
+  display: inline;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#instructions, #crazycity {
+  font-size: 18px;
+}
+
+form {
+  display: inline;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+li {
+  display: block;
+}
+
+label {
+  letter-spacing: 0.5em;
+  margin-left: 1.5%;
+}
+
+input {
+  padding: 0.8%;
+  width: 13em;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: 0;
+  background: #686868;
+  color: white;
+}
+
+img {
+  margin: auto 0;
+  width: 100%;
+}
+
+.play {
+  width: 24.45%;
+  background: white;
+  float: left;
+  padding: 1%;
+  margin: 0.25% 0.5% 0.25% 0;
+  height: 40em;
+}
+
+.events {
+  background: black;
+  color: white;
+  padding: 1%;
+  margin: 0.5% 0.5% 0 0;
+  float: left;
+  width: 19.5%;
+}
+
+.pickIt {
+  background: white;
+  padding: 1%;
+  width: 99.5%;
+}
+
+#allthEvents {
+  margin: 0.25% 0;
+  width: 80%;
+  float: left;
+}
+
+button {
+  background: #bada55;
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  top: -11.9px;
+  width: 15%;
+  margin-left: 2.5%;
+  padding: 0.4%;
+  border-radius: 3px;
+  border: #bada55;
+  box-shadow: #959595 0 2px 5px;
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+button:hover:after {
+  width: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+button:focus {
+  outline: none;
+  background: #8ba33f;
+}
+
+i.fa.fa-plane {
+  color: white;
+  margin-left: 10%;
+}
+
+p.address {
+  display: inline;
+}
