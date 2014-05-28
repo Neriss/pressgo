@@ -11,6 +11,15 @@ body {
   background-attachment: fixed;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrap {
+  min-height: 100%;
+}
+
 header h1 {
   font-family: "Racing Sans One";
   font-size: 150px;
@@ -24,6 +33,9 @@ header h1 {
 .container {
   width: 1000px;
   margin: 0 auto;
+  position: relative;
+  overflow: auto;
+  padding-bottom: 25px;
 }
 
 h2, h3, h4, label, p, span, date {
@@ -89,6 +101,10 @@ img {
   padding: 1%;
   margin: 0.25% 0.5% 0.25% 0;
   height: 40em;
+}
+.play:hover {
+  cursor: pointer;
+  background-image: url("images/60degree_gray.png");
 }
 
 .events {
@@ -163,4 +179,15 @@ i.fa.fa-plane {
 
 p.address {
   display: inline;
+}
+
+footer {
+  background: white;
+  opacity: 0.6;
+  font-family: 'Open Sans';
+  margin-top: -40px;
+  height: 25px;
+  width: 100%;
+  position: relative;
+  clear: both;
 }

@@ -51,6 +51,10 @@ pressGoApp.displayEvents = function(result){
 		var street = $('<span>').text(thisEvent.venue.location.street + ', ');
 		var phone = $('<p>').text(thisEvent.venue.phonenumber);
 		
+		$('.play').click(function(){
+			window.location = thisEvent.url;
+		});
+
 		address.append(localname, street, city, phone);
 		play.append(title, headact, image, date, address);
 
